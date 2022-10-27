@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="register-page">
+        <div class="register-form">
+            <form action="" class="form-container" method="">
+                <h3 class="create-acc">Register</h3>
+
+                <label for="name" class="register-label">First Name</label>
+                <input type="text" placeholder="" name="firstname" class="register-input" required />
+
+                <label for="name" class="register-label">Last Name</label>
+                <input type="text" placeholder="" name="lastname" class="register-input" required />
+
+                <label for="number" class="register-label">Phone Number</label>
+                <input type="tel" placeholder="" name="phoneno" class="register-input" required />
+
+
+                <label for="email" class="register-label">Email Address</label>
+                <input type="email" placeholder="" name="email" class="register-input" required />
+
+                <label for="gender" class="register-label">Gender:</label>
+                <select id="gender" name="gender" class="register-input" required>
+                    <option value="">None</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-Binary">Non-Binary</option>
+                </select>
+
+                <label for="birthday" class="register-label">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" class="register-input">
+
+                <label for="favcolor" class="register-label">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#30bec3" class="register-input">
+
+                <div class="register-btn">
+                    <input type="submit" class="registerbtn" value="Sign Up">
+                </div>
+
+                <span class="quest">Already have an account?
+                    <a href="login.html">Log in</a>
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

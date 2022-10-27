@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* SIGN UP PAGE STYLING */
+.register-page {
+    margin: 4vh auto;
+    width: 80%;
+}
+
+.register-form {
+    background-color: #c3e5eca6;
+    border: 1px solid #e6ceb6;
+    border-radius: 11px;
+    max-width: 90%;
+    min-width: 240px;
+    margin: auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 280px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.create-acc {
+    text-align: center;
+    color: #2b2d2e;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.register-label {
+    color: #2b2d2e;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.register-input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 0.75rem;
+    padding: 0 0.5rem;
+    background: none;
+    color: #2b2d2e;
+    border: 1px solid #767676;
+    border-radius: 6px;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.registerbtn {
+    background: none;
+    border: none;
+    color: #fafafa;
+    padding: 14px 10px;
+    background: #2b7a8a;
+    border-radius: 6px;
+    width: 230px;
+}
+
+.register-btn a {
+    text-decoration: none;
+}
+
+.registerbtn:hover,
+button:hover {
+    background-color: #39a6bc;
+    cursor: pointer;
+}
+
+.quest,
+.quest2 {
+    color: #2b2d2e;
+    text-align: center;
+    font-size: 14px;
+    margin: 12px;
+}
+
+.quest a,
+.quest2 a {
+    color: #ec3737;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.quest a:hover,
+.quest2 a:hover {
+    color: #39a6bc;
+    text-decoration: none;
+}
+
+/* LOG IN PAGE STYLING */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+div#form-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+
+.login-form {
+    border: 1px inset #e6ceb6;
+    background-color: rgba(195, 229, 236, 0.65);
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    text-align: center;
+    width: 120%;
+}
+
+span#login-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2b2d2e;
+    margin-bottom: 2.4rem;
+}
+
+div.input-cont {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.login-label {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 3px;
+}
+
+.login-input {
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.204);
+    border: 1px solid black;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.login-button {
+    background-color: #2b7a8a;
+    ;
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 10px;
+    color: #fafafa;
+    font-size: 15px;
+    margin: 1rem 0rem 0.8rem;
+}
+
+/* SUCCESS PAGE STYLING  */
+.success-cont {
+    background-color: white;
+    color: #2b2d2e;
+}
+
+.success-main {
+    flex-direction: column;
+}
+
+.correct-cont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    z-index: 20;
+}
+
+.correct {
+    width: 90px;
+}
+
+.success-content {
+    background-color: #c3e5eca6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6ceb6;
+    border-radius: 16px;
+    padding: 60px 50px 10px;
+}
+
+.success-content h2 {
+    font-size: 26px;
+    margin: 20px;
+}
+
+.success-content p {
+    font-size: 18px;
+    margin-bottom: 18px
+}
+
+.successful {
+    font-size: 16px;
+    padding: 10px 116px;
+    background-color: #27ba27;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 24px 0px;
+}
+
+/* MEDIA QUERIES FOR SIGN UP PAGE */
+@media screen and (max-width: 900px) {
+    div#form-cont {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .create-acc {
+        font-size: 24px;
+    }
+
+    .register-label {
+        font-size: 16px;
+    }
+
+    .register-lnput {
+        height: 36px;
+    }
+
+    .register-btn {
+        margin-top: 8px;
+    }
+
+    .registerbtn {
+        padding: 14px 10px;
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    div#form-cont {
+        width: 50%;
+    }
+
+    span#login-heading {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div#form-cont {
+        width: 65%;
+    }
+
+    span#login-heading {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .register-form {
+        max-width: 100%;
+    }
+
+    .create-acc {
+        font-size: 20px;
+    }
+
+    .register-label {
+        font-size: 14px;
+    }
+
+    .registerbtn {
+        padding: 14px 10px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form-container {
+        min-width: 260px;
+    }
+
+    .login-form {
+        padding: 32px 40px;
+    }
+
+    .quest2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form-container {
+        min-width: 224px;
+    }
+
+    .register-lnput {
+        height: 30px;
+    }
+
+    .registerbtn {
+        padding: 10px 10px;
+        width: 140px;
+    }
+
+    .quest {
+        margin: 10px 0px;
+    }
+
+    .quest,
+    .quest2 {
+        font-size: 12px;
+    }
+
+    .success-content {
+        padding: 60px 30px 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-container {
+        min-width: 191px;
+    }
+
+    .login-form {
+        padding: 32px 25px;
+    }
+
+    .success-content {
+        padding: 60px 16px 10px;
+    }
+
+    .correct-cont {
+        margin-bottom: -42px;
+    }
+
+    .correct {
+        width: 70px;
+    }
+
+    .success-content h2 {
+        font-size: 22px;
+    }
+
+    .success-content p {
+        font-size: 16px;
+    }
+
+    .successful {
+        font-size: 14px;
+        padding: 10px 108px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .register-form {
+        min-width: 210px;
+    }
+
+    .form-container {
+        min-width: 174px;
+    }
+
+    .registerbtn {
+        min-width: 160px;
+    }
+
+    .success-content p {
+        font-size: 14px;
+    }
+
+    .successful {
+        padding: 10px 90px;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .register-form {
+        min-width: 185px;
+    }
+
+    .register-label {
+        font-size: 13px;
+    }
+
+    .register-btn {
+        margin-top: 16px;
+    }
+
+    .registerbtn {
+        min-width: 150px;
+    }
+
+    .login-input {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .success-content {
+        padding: 60px 6px 10px;
+    }
+
+    .success-content p {
+        font-size: 12px;
+    }
+
+    .successful {
+        padding: 10px 70px;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    .form-container {
+        min-width: 124px;
+    }
+
+    .register-form {
+        min-width: 170px;
+    }
+
+    .registerbtn {
+        min-width: 100px;
+    }
+
+    .create-acc {
+        font-size: 18px;
+    }
+
+    .register-label {
+        font-size: 12px;
+    }
+
+    .quest2 {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 198px) {
+    .register-form {
+        min-width: 150px;
+    }
+
+    .login-form {
+        padding: 32px 18px;
+    }
+
+    .create-acc {
+        font-size: 14px;
+    }
+
+    .register-label,
+    .register-lnput {
+        font-size: 10px;
+    }
+
+    .success-content {
+        padding: 60px 2px 10px;
+    }
+
+    .success-content p {
+        font-size: 11px;
+    }
+
+    .successful {
+        padding: 10px 54px;
+    }
+}
